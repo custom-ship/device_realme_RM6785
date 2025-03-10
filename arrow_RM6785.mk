@@ -28,19 +28,18 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RM6785
+PRODUCT_NAME := arrow_RM6785
 PRODUCT_DEVICE := RM6785
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RM6785
 PRODUCT_MANUFACTURER := realme
 
 # GMS additional stuff
-WITH_GMS := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_USES_ACOUSTIC_PACKAGES := true
-TARGET_BOOT_ANIMATION_RES := 1440
+ARROW_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
